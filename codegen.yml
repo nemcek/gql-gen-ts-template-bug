@@ -1,0 +1,13 @@
+schema:
+  - "schema.graphql"
+documents:
+  - "countriesQuery.graphql"
+overwrite: true
+generates:
+  ./types/api.ts:
+    config:
+      immutableTypes: true
+      noNamespaces: true
+    plugins:
+      - "typescript-common"
+      - "typescript-client"

@@ -1,0 +1,13 @@
+type Country {
+  id: Int!
+  code: String!
+  name: String!
+}
+
+type Query {
+  countries: CountriesPayload!
+}
+
+type CountriesPayload {
+  countries: [Country!]
+}
